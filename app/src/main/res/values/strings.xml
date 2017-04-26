@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">Media Player</string>
+    <string name="main_menu_music_button">Music</string>
+    <string name="main_menu_videos_button">Videos</string>
+    <string name="main_menu_photos_button">Photos</string>
+    <string name="main_menu_playlists_button">Playlists</string>
+    <string name="main_menu_artists_button">Artists</string>
+    <string name="main_menu_songs_button">Songs</string>
+    <string name="main_menu_albums_button">Albums</string>
+    <string name="main_menu_title">Media</string>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_artists"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.quinton.mediaplayer.PlaylistsFragment">
+
+
+        <GridView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnWidth="90dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:verticalSpacing="8dp"
+            android:horizontalSpacing="7dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"
+            android:listSelector="@drawable/selector"
+            android:id="@+id/artists_grid">
+        </GridView>
+
+
+
+</LinearLayout>

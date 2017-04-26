@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffffff"
+    android:theme="@style/AppTheme"
+    tools:context="com.example.quinton.mediaplayer.MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_marginTop="0dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom">
+
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/main_menu_tab_layout"
+                android:layout_width="fill_parent"
+                android:background="@drawable/tablayout_border"
+                android:layout_height="50dp"
+                app:tabMode="scrollable"
+                app:tabIndicatorColor="@color/colorPrimary"
+                app:tabSelectedTextColor="#9E9E9E"
+                app:tabMinWidth="20dp"
+                app:tabIndicatorHeight="4dp"
+                app:tabGravity="fill"
+                app:tabTextAppearance="@style/TabLayoutTextStyle"
+                android:layout_gravity="center|bottom">
+            </android.support.design.widget.TabLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tab_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryLight"/>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/play_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:background="@color/colorPrimaryLight"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+

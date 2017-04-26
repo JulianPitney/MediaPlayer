@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_artists"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal"
+    android:background="#ffffffff"
+    android:layout_height="wrap_content"
+    tools:context="com.example.quinton.mediaplayer.PlayFragment">
+
+
+    <ImageView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="left"
+        android:scaleType="fitStart"
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="8dp"
+        android:minHeight="@dimen/activity_vertical_margin"
+        android:minWidth="@dimen/activity_horizontal_margin"
+        android:paddingTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/play_bar_image" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:textAlignment="gravity"
+        android:layout_gravity="left">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/play_bar_song_name"
+            android:textAlignment="gravity"
+            android:layout_gravity="start"
+            android:textColor="@color/colorTextPrimary"
+            android:maxLines="1"
+            android:maxWidth="230dp"
+            android:minWidth="230dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="14dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/play_bar_band_name"
+            android:maxWidth="230dp"
+            android:minWidth="230dp"
+            android:textColor="@color/colorTextSecondary"
+            android:maxLines="1"
+            android:layout_marginTop="2dp"
+            android:textAlignment="gravity"
+            android:layout_gravity="left"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="16dp"
+        android:minHeight="60dp"
+        android:minWidth="70dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:id="@+id/play_bar_play_button"
+        android:background="@drawable/play_icon"
+        />
+
+
+</LinearLayout>
